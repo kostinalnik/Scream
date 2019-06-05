@@ -79,7 +79,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Models\User.cs" />
-    <Compile Include="Views\Class1.cs" />
     <Compile Include="Views\LoginView.xaml.cs">
       <DependentUpon>LoginView.xaml</DependentUpon>
     </Compile>
