@@ -24,7 +24,7 @@ namespace Client.Views
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void bLogin_Click(object sender, RoutedEventArgs e)
         {
             string text = tbUsername.Text;
             if (text != "")
@@ -33,5 +33,9 @@ namespace Client.Views
             }
         }
 
+        private void bExit_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

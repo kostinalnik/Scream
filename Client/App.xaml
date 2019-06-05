@@ -4,6 +4,9 @@
              xmlns:local="clr-namespace:Client"
              xmlns:views="clr-namespace:Client.Views"
              StartupUri="Views/LoginView.xaml">
+    <!--чтобы изменить-->
+    <!--StartupUri="Views/LoginView.xaml"-->
+    <!--StartupUri="MainWindow.xaml-->
     <Application.Resources>
          
     </Application.Resources>
