@@ -26,11 +26,14 @@ namespace Client.Views
 
         private void bLogin_Click(object sender, RoutedEventArgs e)
         {
-            string text = tbUsername.Text;
-            if (text != "")
-            {
-                MessageBox.Show(text);
-            }
+            //string text = tbUsername.Text;
+            //if (text != "")
+            //{
+            //    MessageBox.Show(text);
+            //}
+
+            MainWindow chatWindow = new MainWindow();
+            chatWindow.Show();
         }
 
         private void bExit_Click(object sender, RoutedEventArgs e)
