@@ -63,7 +63,6 @@
 			Grid.RowSpan="20"
             Grid.ColumnSpan="4"
             Background="GhostWhite" BorderBrush="Silver" BorderThickness="1" CornerRadius="8,8,3,3">
-
                 <StackPanel Background="#FFD4F1F1" Grid.ColumnSpan="4" Margin="0,0,0,0" Grid.RowSpan="20" Grid.Row="1"/>
             </Border>
 
@@ -74,13 +73,13 @@
             Grid.ColumnSpan="15"
             Background="GhostWhite" BorderBrush="Silver" BorderThickness="1" CornerRadius="8,8,3,3">
                 <TextBlock x:Name="chatTextBlock"
-            Background="#FFF0EFEA"
-			Grid.Column="4" 
-			Grid.Row="1" 
-			Grid.RowSpan="17" 
-			TextWrapping="Wrap" 
-			Text="TextBlock" 
-			Grid.ColumnSpan="15">
+					Background="#FFF0EFEA"
+					Grid.Column="4" 
+					Grid.Row="1" 
+					Grid.RowSpan="17" 
+					TextWrapping="Wrap" 
+					Text="TextBlock" 
+					Grid.ColumnSpan="15">
                 </TextBlock>
             </Border>
 
@@ -105,15 +104,65 @@
 			BorderThickness="1" 
 			CornerRadius="8,8,3,3">
                 <Button x:Name="button" 
-			Grid.ColumnSpan="3" 
-			Content="Button" 
-			Grid.Column="16" 
-			HorizontalAlignment="Center" 
-			Grid.Row="18" 
-			VerticalAlignment="Top" 
-			Width="114" 
-			Height="59" 
-			Grid.RowSpan="3"/>
+					Grid.ColumnSpan="3" 
+					Content="Button" 
+					Grid.Column="16" 
+					HorizontalAlignment="Center" 
+					Grid.Row="18" 
+					VerticalAlignment="Top" 
+					Width="114" 
+					Height="59" 
+					Grid.RowSpan="3"/>
+            </Border>
+
+            <Border 
+            Grid.Column="0"
+			Grid.Row="0" 
+            Grid.ColumnSpan="21" 
+            Background="#FF5B5656" 
+			BorderBrush="Silver" 
+			BorderThickness="1" 
+			CornerRadius="8,8,3,3">
+                <StackPanel 
+					Grid.ColumnSpan="21" 
+					HorizontalAlignment="Center" 
+					Height="20" 
+					VerticalAlignment="Top" 
+					Width="792">
+                    <StackPanel.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="Black" Offset="0"/>
+                            <GradientStop Color="#FF5B5656" Offset="1"/>
+                        </LinearGradientBrush>
+                    </StackPanel.Background>
+                </StackPanel>
+            </Border>
+
+            <Border 
+            Grid.Column="19"
+			Grid.Row="1" 
+            Grid.ColumnSpan="3" 
+			Grid.RowSpan="20" 
+            Background="#FFD14646"
+			BorderBrush="Silver" 
+			BorderThickness="1" 
+			CornerRadius="8,8,3,3">
+                <StackPanel 
+				Grid.ColumnSpan="3" 
+				Grid.Column="19" 
+				HorizontalAlignment="Center" 
+				Height="399" Margin="0,0,0,0" 
+				Grid.Row="1" 
+				Grid.RowSpan="20" 
+				VerticalAlignment="Top" 
+				Width="74">
+                    <StackPanel.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="Black" Offset="0"/>
+                            <GradientStop Color="#FFD14646" Offset="1"/>
+                        </LinearGradientBrush>
+                    </StackPanel.Background>
+                </StackPanel>
             </Border>
 
         </Grid>
