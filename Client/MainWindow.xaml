@@ -70,7 +70,7 @@
             Grid.Column="4" 
 			Grid.Row="1" 
 			Grid.RowSpan="17" 
-            Grid.ColumnSpan="15"
+            Grid.ColumnSpan="9"
             Background="GhostWhite" BorderBrush="Silver" BorderThickness="1" CornerRadius="8,8,3,3">
                 <TextBlock x:Name="chatTextBlock"
 					Background="#FFF0EFEA"
@@ -78,10 +78,30 @@
 					Grid.Row="1" 
 					Grid.RowSpan="17" 
 					TextWrapping="Wrap" 
-					Text="TextBlock" 
-					Grid.ColumnSpan="15">
+                    Text="" TextAlignment="Left" FontWeight="Bold" FontSize="14"
+					Grid.ColumnSpan="9" 
+                    Margin="0,0,0,0">
                 </TextBlock>
             </Border>
+
+            <Border 
+            Grid.Column="13" 
+			Grid.Row="1" 
+			Grid.RowSpan="17" 
+            Grid.ColumnSpan="6"
+            Background="GhostWhite" BorderBrush="Silver" BorderThickness="1" CornerRadius="8,8,3,3">
+                <TextBlock x:Name="chatTextBlockSend"
+					Background="#FFF0EFEA"
+					Grid.Column="13" 
+					Grid.Row="1" 
+					Grid.RowSpan="17" 
+					TextWrapping="Wrap" 
+                    Text="" TextAlignment="Left" FontWeight="Bold" FontSize="14"
+					Grid.ColumnSpan="6" 
+                    Margin="0,0,0,0">
+                </TextBlock>
+            </Border>
+
 
             <Border 
             Grid.Column="4" 
@@ -92,6 +112,14 @@
 			BorderBrush="Silver" 
 			BorderThickness="1" 
 			CornerRadius="8,8,3,3">
+                <TextBox x:Name="tbMessage"
+					Grid.Column="4" 
+					Grid.Row="18" 
+					Grid.RowSpan="3" 
+					Grid.ColumnSpan="12"
+					Background="#FFECECF3" 
+					TextWrapping="Wrap" 
+					Text=""/>
             </Border>
 
             <Border 
@@ -103,16 +131,17 @@
 			BorderBrush="Silver" 
 			BorderThickness="1" 
 			CornerRadius="8,8,3,3">
-                <Button x:Name="button" 
+                <Button x:Name="bSend" 
 					Grid.ColumnSpan="3" 
-					Content="Button" 
+					Content="Send" 
 					Grid.Column="16" 
 					HorizontalAlignment="Center" 
 					Grid.Row="18" 
 					VerticalAlignment="Top" 
 					Width="114" 
 					Height="59" 
-					Grid.RowSpan="3"/>
+					Grid.RowSpan="3"
+                    Click="bSend_Click"/>
             </Border>
 
             <Border 
