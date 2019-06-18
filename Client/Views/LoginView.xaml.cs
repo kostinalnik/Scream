@@ -19,6 +19,8 @@ namespace Client.Views
     /// </summary>
     public partial class LoginView : Window
     {
+
+
         public LoginView()
         {
             InitializeComponent();
@@ -26,14 +28,9 @@ namespace Client.Views
 
         private void bLogin_Click(object sender, RoutedEventArgs e)
         {
-            //string text = tbUsername.Text;
-            //if (text != "")
-            //{
-            //    MessageBox.Show(text);
-            //}
 
-            MainWindow chatWindow = new MainWindow();
-            chatWindow.Show();
+            MainWindow chatWindow = new MainWindow(tbUsername.Text);
+            chatWindow.ShowDialog();
         }
 
         private void bExit_Click(object sender, RoutedEventArgs e)
